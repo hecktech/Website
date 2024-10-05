@@ -1,0 +1,168 @@
+*{
+    text-decoration: none;
+}
+.navdiv{
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    
+
+}
+body{
+    min-height: 100vh;
+    background: url('./Images/bg.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 10px 10px 100px
+}
+
+.logo{
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    transition: all 0.3s ease 0s;
+
+}
+.logo:hover{
+    color: rgb(0, 225, 255);
+}
+li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+    
+}
+li a{
+    color: white;
+    font-size: ;
+    font-weight: bold;
+  transition: all 0.3s ease 0s;
+}
+li a:hover{
+    color: rgb(0, 191, 255);
+  
+}
+button{
+    padding: 9px 10px;
+    background-color: rgb(5, 225, 254);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button a{
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+   
+}
+button:hover{
+    background-color: rgba(40, 18, 238, 0.5);
+}
+div h1,h2,p{
+    color: aliceblue;
+    
+}
+.about{
+    display: flex;
+     width: 50%;
+    display: flex;
+    flex-direction: column;
+    max-height: 70vh;
+    min-height: 70vh;
+    justify-content: center;    
+}
+div>h1{
+     letter-spacing:2px ;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+div>h2{
+    letter-spacing:2px ;
+    font-size: 2rem;
+    margin: 0;
+    color: rgb(5, 225, 254);
+}
+div>p{
+    font-size: x-large;
+    margin-bottom: 3vh;
+    
+    
+}
+.btn>button{
+    width: 150px;
+    height: 50px;
+    padding: auto;
+    margin: 10px;
+    font-size: large;
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .btn>button {
+        width: 130px;
+        height: 45px;
+        font-size: medium;
+    }
+ 
+}
+
+@media screen and (max-width: 480px) {
+    
+    body{
+        padding:0 2% 0 3%;
+    }
+    .btn>button {
+        width: 110px;
+        height: 40px;
+        font-size: small;
+    }
+    .about{
+        max-width: 80%;
+        width: 80%;
+    }
+    .logo{
+        font-size: 0;
+    }
+    div.navdiv{
+        padding: 20px 0;
+        margin: 10px0;
+    }
+    li{
+        padding: 8px;
+        margin: 0;
+    }
+    ul{
+        padding: 10px 0 ;
+        margin: 10 0;
+    }
+    div>h1{
+        font-size: 1.75rem;
+    }
+    div>h2{
+        font-size: 1.50rem;
+    }
+    div>p{
+        font-size: 1.25rem;
+    }
+}
+@media screen and (min-width: 479px) {
+    body{
+        padding:0 3% 0 5%;
+    }
+    .btn>button {
+        width: 150px;
+        height: 40px;
+        font-size: medium;
+    }
+    .about{
+        max-width: 80%;
+        width: 80%;
+    }
+  
+}

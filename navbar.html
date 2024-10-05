@@ -1,0 +1,104 @@
+
+    <div class="logo">Praveen.</a></div>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+        <button class="login" id="loginButton"><a href="./login.html">Login</a></button>
+        
+    </ul>
+
+<style>
+  
+    .navdiv{
+   position: relative;
+   top: 30px;
+    background:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+   
+    
+
+}
+.logo{
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    transition: all 0.3s ease 0s;
+
+}
+.logo:hover{
+    color: rgb(0, 225, 255);
+}
+li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+    
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+  transition: all 0.3s ease 0s;
+}
+li a:hover{
+    color: rgb(0, 191, 255);
+  
+}
+button{
+    padding: 9px 10px;
+    background-color: rgb(5, 225, 254);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button a{
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+   
+}
+button:hover{
+    background-color: rgba(40, 18, 238, 0.5);
+}
+div h1,h2,p{
+    color: aliceblue;
+    
+}
+@media screen and (max-width: 480px) {
+    
+  
+  
+    .logo{
+        font-size: 0;
+    }
+    div.navdiv{
+        padding: 20px 0;
+        margin: 10px0;
+    }
+    li{
+        padding: 8px;
+        margin: 0;
+    }
+    ul{
+        padding: 10px 0 ;
+        margin: 10 0;
+    }
+   
+}
+@media screen and (min-width: 479px) {
+    body{
+        padding:0 3% 0 5%;
+    }
+ 
+}
+</style>

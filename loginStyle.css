@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    height: 100vh;
+    background:url('./Images/bg.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.login.active{
+    display:none;
+   
+}
+
+
+.Register.active{
+
+    display: none;
+}
+.loginMain{
+background:transparent;
+border:2px solid rgba(255, 255, 255, .2);
+backdrop-filter: blur(20px);
+width: 400px;
+color: azure;
+border-radius: 10px;
+padding: 30px 40px;
+position: relative;
+top: 20%;
+left: 60%;
+transition:height .2s ease;
+
+
+}
+.loginMain.active{
+    height:600px ;
+}
+.loginMain h1{
+    text-align: center;
+    font-size: 36px;
+
+}
+.input-box{
+    position: relative;
+   width: 100%;
+   height: 50px;
+ 
+   margin: 30px 0;
+
+}
+.input-box input{
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    background: transparent;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 25px ;
+    border: 2px solid rgba(255, 255, 255, .2);
+}
+
+.input-box input::placeholder{
+    color: white;
+    padding: 0 0 0 20px;
+}
+.input-box i{
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    font-size: 20px;
+}
+.loginMain .mid{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.mid input{
+    accent-color: #932cd8;
+    margin-right: 3px;
+}
+.mid a{
+    color: #fff;
+    text-decoration: none;
+}
+.mid a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1 );
+
+}
+.register-link{
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.register-link a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+
+
+}
+.register-link a:hover{
+    text-decoration: underline;
+}
+.login-link{
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.login-link a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+
+
+}
+.login-link a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 480px){
+    .loginMain{
+        position:relative;
+        left: 5%;
+        top: 10%;
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .loginMain{
+        position:relative;
+        left: 50%;
+      
+        width: 350px;
+    }
+}
