@@ -149,8 +149,8 @@ input{
 @media screen and (max-width:480px) {
     .wrapper{
         position: relative;
-        left: 5%;
-        max-width: 350px;
+        left: 4%;
+        max-width: 300px;
     }
 }
 /* For smaller screens */
