@@ -1,0 +1,148 @@
+
+body{
+    min-height: 100vh;
+    height: 100vh;
+    background:url(../login/bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    gap: 20px;
+    max-width: 400px;
+    background-color:transparent ;
+    position: relative;
+    top: 10%;
+    left: 60%;
+    
+   
+
+}
+.start-container{
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+    border: 2px solid #828dff ;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+
+}
+h1 ,h2 ,p{
+    margin: 0;
+    padding: 0;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    background-color: #828dff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;  
+}
+.details{
+    width: 60%;
+
+}
+#progress{
+    width: 0%;
+    height: 10px;
+    background-color: #24feee;
+    transition: all 0.3s ease;
+}
+#progressbar{
+    width: 100%;
+    height: 10px;
+    background-color:#171c48;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+form{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+   
+
+}
+input{
+    flex: 1;
+    background-color:#171c48;
+   outline: none;
+    border-radius: 10px;
+    border: 2px solid #828dff;
+    padding: 16px;
+    color: #fff;
+   
+   
+    
+
+}
+#newtask{
+    margin-left: 15px;
+   width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #828dff;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    outline: none;
+}
+.taskItem{
+    display: flex;
+    background-color: #171c48;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+   width: 100%;
+   align-items: center;
+}
+.completed p{
+    text-decoration: line-through;
+    color: rgb(0, 255, 208);
+}
+.taskItem img{
+    width: 24px;
+    height: 24px;
+    margin: 0 10 px;
+    cursor: pointer;
+}
+.task{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.task input{
+    width: 24px;
+    height: 24px;
+  
+}
+#task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+    list-style: none;
+    color: #fff;
+    padding: 0;
+}
+@media screen and (max-width:480px) {
+    .wrapper{
+        position: relative;
+        left: 5%;
+        max-width: 350px;
+    }
+}
+/* For smaller screens */
